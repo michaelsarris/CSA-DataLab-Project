@@ -1,19 +1,14 @@
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
+import java.awt.*;
+import javax.swing.*;
 
 public class BarChartExample extends JPanel {
 
     private int[] data;
-    JLabel jl;
+    private String[] labels;
 
-    public BarChartExample(int[] data) {
+    public BarChartExample(int[] data, String[] labels) {
         this.data = data;
-        jl = new JLabel("bar 1");
-        add(jl);
+        this.labels = labels;
     }
 
     @Override
@@ -23,7 +18,7 @@ public class BarChartExample extends JPanel {
 
         int width = getWidth();
         int height = getHeight();
-        int barWidth = (width / data.length)-10;
+        int barWidth = (width / data.length) - 10;
 
         int max = 0;
         for (int value : data) {
@@ -32,15 +27,25 @@ public class BarChartExample extends JPanel {
             }
         }
 
+        // Draw bars and labels
         for (int i = 0; i < data.length; i++) {
             int barHeight = (int) (((double) data[i] / max) * height);
-            int x = i * barWidth;
+            int x = i * (barWidth + 10);
             int y = height - barHeight;
 
+            // Set color for the bar
             g2d.setColor(Color.BLUE);
             g2d.fillRect(x, y, barWidth, barHeight);
             g2d.setColor(Color.BLACK);
             g2d.drawRect(x, y, barWidth, barHeight);
+
+            // Draw labels under each bar
+            g2d.setColor(Color.BLACK);
+            String label = labels[i];
+            FontMetrics fm = g2d.getFontMetrics();
+            int labelWidth = fm.stringWidth(label);
+            int labelX = x + (barWidth - labelWidth) / 2;
+            g2d.drawString(label, labelX, height - 5);  // Adjusting y to position below the bar
         }
     }
 }

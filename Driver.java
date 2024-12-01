@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 public class Driver {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        //System.out.println("hello world");
+        // Load data from the CSV file (you may modify this logic depending on the structure of your CSV)
         List<List<String>> records = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("colours_rgb_shades.csv"))) {
             String line;
@@ -20,17 +20,16 @@ public class Driver {
                 records.add(Arrays.asList(values));
             }
         }
-        System.out.println(records.get(1));
-        System.out.println(records.get(1).get(1));
-        System.out.println(records.get(1).get(2));
-        System.out.println(records.get(1).get(3));
 
+        // For demonstration, using hardcoded data
+        int[] data = {20, 15, 30, 10, 25};
+        String[] labels = {"Bar 1", "Bar 2", "Bar 3", "Bar 4", "Bar 5"};
 
         JFrame frame = new JFrame("Bar Chart Example");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        int[] data = {20, 15, 30, 10, 25};
-        BarChartExample chart = new BarChartExample(data);
+        // Pass both data and labels to the chart
+        BarChartExample chart = new BarChartExample(data, labels);
         chart.setPreferredSize(new Dimension(600, 300));
 
         frame.getContentPane().add(chart);
