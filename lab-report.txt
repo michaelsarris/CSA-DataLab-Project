@@ -1,5 +1,8 @@
+Student Name: 
+
 Hypothesis:    (e.g., Higher screen time is associated with lower physical activity).
 Data Sets Used:   (give the two names of the dataSets you found )
+
 1.
 2.
 
@@ -15,11 +18,21 @@ Data Processing:   (follow the 2 steps)
 
 Create Descriptive Statistics:
 
-Calculate measures like mean, median, mode, and range, to summarize the dataset. What can be inferred?
+Calculate measures like mean, median, mode, and range, to summarize the 
+dataset. 
 
-What can be infrered from combining the two datasets you found? Is there any correlation in growth trends?
+What can be inferred? 
+
+What can be visualized in a bar graph?
+
+What can be infrered from combining the two datasets you found? Is there 
+any correlation or trends?
 Be CREATIVE with this part. 
 
 
-*If you can't find a dataset that works, create one from data you find on a website and import it into your research!
-*
+What does your bar graph show?
+
+
+What further research would you do if you had more time and resources?
+
+
