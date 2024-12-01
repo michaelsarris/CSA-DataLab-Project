@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -5,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.JFrame;
 
 public class Driver {
 
@@ -22,10 +24,17 @@ public class Driver {
         System.out.println(records.get(1).get(1));
         System.out.println(records.get(1).get(2));
         System.out.println(records.get(1).get(3));
-/* 
-        for(int i =0;i<records.size();i++){
-            System.out.println(records.get(i));
-        }
-*/
+
+
+        JFrame frame = new JFrame("Bar Chart Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        int[] data = {20, 15, 30, 10, 25};
+        BarChartExample chart = new BarChartExample(data);
+        chart.setPreferredSize(new Dimension(600, 300));
+
+        frame.getContentPane().add(chart);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
