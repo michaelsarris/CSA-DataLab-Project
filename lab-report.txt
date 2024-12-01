@@ -1,0 +1,25 @@
+Hypothesis:    (e.g., Higher screen time is associated with lower physical activity).
+Data Sets Used:   (give the two names of the dataSets you found )
+1.
+2.
+
+Data Set Source:   (provide links to where data was found)
+
+link 1: 
+link 2:
+
+Data Processing:   (follow the 2 steps)
+
+1. Check for empty entries, decide if they will affect your research and remove them
+2. Check for duplicate entries, remove them.
+
+Create Descriptive Statistics:
+
+Calculate measures like mean, median, mode, and range, to summarize the dataset. What can be inferred?
+
+What can be infrered from combining the two datasets you found? Is there any correlation in growth trends?
+Be CREATIVE with this part. 
+
+
+*If you can't find a dataset that works, create one from data you find on a website and import it into your research!
+*

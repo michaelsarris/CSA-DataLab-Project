@@ -1,0 +1,27 @@
+## Place your responses to the data lab packet here ##
+
+1. List two or three sites that you access on a regular basis.
+
+
+2. In your group, find the privacy policy for your given site and identify two or three
+pieces of information that are collected for users of the site.
+
+
+
+3. What does the word delimited mean? Why is this necessary when talking about
+data files?
+
+
+
+4. Given a data file, how can you determine the type of data that might be contained in
+a specific column?
+
+
+
+
+5. On your own, identify two broad areas of interest that you have. Examples include
+health, sports, etc.
+
+
+
+........continue to copy and paste the questions here yourselves.....
